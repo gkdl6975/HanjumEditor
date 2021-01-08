@@ -1,0 +1,42 @@
+@charset "UTF-8";
+		.chat_container {display: flex; background: #fff;}
+		.chat_room_list { border:1px solid #999; font-size:13px; color:#333; height: 100%; padding: 5px;}
+		.chat_room{display: flex; flex-direction: column; height:400px; overflow-y: auto; overflow-x: hidden;}
+		.chat_wrap h3 {color:#000;}
+		
+		#chat_list{margin: 5px;}
+		
+		.chat_side {width:100%; overflow:hidden; transition:all .3s;}
+		.chat_content {width:0px; overflow: hidden; transition:all .3s;}
+		
+		.chat_subject {font-size: 18px; font-weight: bold; margin: 0;}
+		
+		
+		.chat_room_item { border:1px solid #999; height:80px; border-radius: 8px;  cursor: pointer; margin-bottom: 10px; transition:all .3s;}
+		.chat_room_item:hover { transform:translate(10px,0);}
+		.chat_wrap{border:1px solid #999; padding:5px; font-size:13px; color:#333;}
+		.chat_wrap .inner{background-color:#acc2d2; border-radius:5px; padding:10px; overflow-x: hidden; overflow-y:auto; height:400px;
+			-ms-overflow-style: none; /* IE and Edge */
+   			 scrollbar-width: none; /* Firefox */}
+   		.chat_wrap .inner::-webkit-scrollbar {
+		    display: none; /* Chrome, Safari, Opera*/}
+		.chat_wrap .item{margin-top:15px}
+		.chat_wrap .item:first-child{margin-top:0}
+		.chat_wrap .item .msgBox{display:inline-block; max-width:200px; position:relative}
+		.chat_wrap .item .msgBox:before{content:""; position:absolute; left:-8px; top:9px; border-top:0px solid transparent; border-bottom:8px solid transparent; 
+			border-right:8px solid #fff;}
+		.chat_wrap .item .msgBox .msg{background:#fff; border-radius:10px; padding:8px; text-align:left}
+		.chat_wrap .item .msgBox .time{font-size:11px; color:#999; position:absolute; right:-75px; bottom:0; width:70px}
+		.chat_wrap .item.mymsg{text-align:right}
+		.chat_wrap .item.mymsg .msgBox:before{left:auto; right:-8px; border-left:8px solid #fee600; border-right:0;}
+		.chat_wrap .item.mymsg .msgBox .time{right:auto; left:-75px}
+		.chat_wrap .item.mymsg .msgBox .msg{background:#fee600}
+		.chat_wrap .item .msgBox{transition:all .3s ease-out; margin:0 0 0 20px; opacity:0}
+		.chat_wrap .item.mymsg .msgBox{margin:0 20px 0 0;}
+		.chat_wrap .item.on .msgBox{margin:0; opacity:1}
+		
+		.chat_msg {line-height: 40px; vertical-align: bottom; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 70%; display: inline-block;}
+		.chat_date {float: right; line-height: 40px; vertical-align: top;}
+		input[type="text"]{border:0;; width:80%; background:#ddd; border-radius:5px; height:30px; padding-left:5px; box-sizing:border-box; margin-top:5px}
+		input[type="text"]::placeholder{color:#999}
+		

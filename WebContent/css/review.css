@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.review_item_1 { flex-grow: 3; }
+.review_item_2 { flex-grow: 1; 				 
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	padding-left: 10px;}
+.review_from_id { color: #4986fc;}

@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@font-face {
+    font-family: PWperspective;
+    src: url('./font/PWperspective.ttf');
+}
+@font-face {
+    font-family: NanumGothic_0;
+    src: url('./font/NanumGothic_0.ttf');
+    }
+@font-face {
+    font-family: NanumGothicBold_0;
+    src: url('./font/NanumGothicBold_0.ttf');
+    }
+html,body {margin: 0; padding:0; min-height: 500px; min-width: 500px;	font-family: "NanumGothic_0", sans-serif;
+/*  	background-image: url("../img/back6.png"); background-position: 300px 0px; */
+ 	
+ 	}
+main { min-height: 500px;}
+header {height:81px; background-color:rgb(230,0,0, 0.65);}
+div#wrap {width: 1400px; margin: 0 auto; background: #fff2e6;}
+div#top {margin: 0 auto; display: inline; position:relative; z-index: 300; }
+div#top_title { float: left; margin: 20px 0 0 20px; cursor: pointer; }
+div#top_menu { float: left; margin: 20px 0 20px 50px; }
+div#top_menu li { padding : 0px 40px; }
+div.top_member_menu {position:relative; float: right; margin: 20px 20px 0 0; z-index:301;}
+div.menu_user, div.menu_notice, div.menu_setting {  position : relative; width : 45px; top:-15px; left:0px; height: 45px; border-radius: 4px; cursor: pointer;}
+div.menu_user img, div.menu_notice img { position : absolute; width : 40px; top:3px; left:3px; z-index:302;}
+ul.menu_col li { float:left; list-style-type: none; padding: 0 20px;}
+ul.main_banner_list {padding: 0; margin: 0; position: absolute; z-index:302;}
+ul.main_banner_list li {padding: 0; margin: 0;}
+ul.menu_member li { padding: 0 10px;}
+.lstyle_n {list-style-type: none; margin: 0; padding: 0;}
+.clear {clear: both;}
+.no_margin { margin : 0;}
+.no_padding { padding: 0;}
+.font_black { color : rgb(58, 58, 58); }
+.font_white { color : #fff; }
+.font_red { color : #c60000; }
+.font_green { color : #32b700; }
+.font_bold { font-weight: bold; }
+.fx_header {width:1400px; position: fixed; top: 0; margin: 0 auto; background-color:rgb(230,0,0, 0.65); color: #000; z-index:302;}
+.f_right {float:right;}
+.f_left {float:left;}
+.margin_r_10 {margin-right: 10px;}
+.margin_l_10 {margin-left: 10px;}
+.bg_red {background-color: #c60000;}
+
+.td_s {width: 200px}
+.td_m {width: 400px}
+.td_l {width: 600px}
+
+
+a.btn_link { text-decoration: none;}
+a.btn_link:hover { text-decoration: underline; }
+a.btn_banner { text-decoration: none;}
+
+a.btn_main { font-weight: bold; }
+
+div.menu_manager_content {font-weight:bold; color:white; width:400px; height:0%; position: absolute; top:70px; left:-200px; background-color: rgba(255,255,255, 0.9); overflow: hidden; transition:0.5s; border-radius: 8px; z-index:303;}
+div.menu_user_notice {font-weight:bold; color:white; width:400px; height:0%; position: absolute; top:70px; left:-150px; background-color: rgba(255,255,255, 0.9); overflow: hidden; transition:0.5s; border-radius: 8px; z-index:303;}
+div.menu_user_content{width:300px; height:0%; position: absolute; top:73px; left:0; background-color: rgba(255,255,255, 0.9); overflow: hidden; transition:0.5s; border-radius: 8px; z-index:303;}
+.overlay_content {position: relative; top:0; width:100%; text-align: conter; z-index:303;}
+.overlay_content li { color: #fff; font-size: 20px; padding: 8px; font-weight: bold;} 
+.overlay_content li a{ position: relative; padding: 8px; text-decoration: none; font-size: 20px; color: #c60000; display: block; transition: 0.3s; font-weight: bold; z-index: 303px;}
+ul.pullRight li a:before{position: absolute;width: 2px;height: 40px;left: 0px;top: 0px;content: '';background: #c60000;opacity: 0.25;transition: all 0.3s;}
+ul.pullRight li a:hover:before{ width: 100%;}
+div.notice_content ul li a {text-decoration: none; color:#c60000;}
+div.notice_title {height: 30px; border-bottom: 2px solid #c60000; background-color:#c60000; vertical-align: middle; line-height: 30px;}
+div.notice_title span {font-size: 20px; color:#fff; padding-left: 10px;}
+div.notice_content {margin-left: 20px;}
+div.notice_content ul li{padding:20px 0 30px 0;}
+
+div.menu_setting {position: absolute; top: 5px; left: -5px; z-index:320;}
+
+div.check_list { display: inline-block; margin: 0px 10px;}
+div.check_list span {margin-left: 10px;}
+div.check_list input[type="checkbox"] {display: none;}
+div.check_list input[type="checkbox"]+label {display: inline-block; cursor:pointer; width: 20px; height: 20px; background-image: url("../img/checkbox-line.png"); background-size: 20px; border-radius: 4px;vertical-align: middle; line-height: 10px;}
+div.check_list input[type="checkbox"]:checked+label {background-color: #ff8080;}
+div.check_list input[type="radio"] {display: none;}
+div.check_list input[type="radio"]+label {display: inline-block; cursor:pointer; width: 20px; height: 20px; background-image: url("../img/checkbox-line.png"); background-size: 20px; border-radius: 4px;vertical-align: middle; line-height: 10px;}
+div.check_list input[type="radio"]:checked+label {background-color: #ff8080;}
+
+input.defaultTextInput {width:150px; height: 25px;}
+button.defaultBtn {width:80px; height: 30px; border: 0; background-color: #ff8080; color: #fff; font-size:18px; cursor: pointer;}
+input.defaultTextInput {width:100px; height: 25px;}
+input.largeTextInput {width:400px; height:25px}
+input.middleTextInput {width:300px; height: 25px;}
+input.smallTextInput {width:200px; height: 25px;}
+.defaultBtn {width:80px; height: 30px; border: 2px #fff solid; border-radius: 4px; background-color: #ff8080; color: #fff; font-size:18px; font-weight:bold; cursor: pointer;}
+@media (max-width : 1800px) {
+.ad1,.ad2 {display: none;}
+}
+@media (min-width : 1801px) {
+.ad1,.ad2 {display: block;}
+.ad1 img, .ad2 img{ width:200px; }
+.ad1 { position: absolute; left:560px; top:150px;}
+.ad2 { position: absolute; left:-1120px; top:150px;}
+
+}
+@media (min-width : 2100px) {
+.ad1,.ad2 {display: block;}
+.ad1 img, .ad2 img{ width:300px; }
+.ad1 { position: absolute; left:560px; top:150px;}
+.ad2 { position: absolute; left:-1220px; top:150px;}
+
+}
+
+
+
+
+
+
+
+
+footer {position: relative; height: 200px; background-color: #373737; color: #fff; z-index: 250;}
+footer table { position: absolute; bottom:70px; }
+footer td { padding: 0 50px;}
+footer td.footer_title {font-size: 36px;}
+footer td.footer_content {font-size: 14px;}
+footer td.footer_sms img { width: 30px; background-color: #fff; border-radius: 5px; margin: 0 10px;}

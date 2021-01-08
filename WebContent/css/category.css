@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.category_list{
+	width: 800px;
+	min-height: 600px;
+}
+
+#category_txt, #category_add{
+	width: 500px; 
+	height: 50px;
+	border-radius: 20px; 
+	text-align: center;
+	font-size: 30px; 
+	border: 1px solid #787878; 
+	border-style:groove; 
+	color: #787878;
+	}
+
+#category_add{
+	margin-top: 10px;
+}
+	
+.category_btn{
+	border:none; 
+	background-color: #ffffff;
+	font-size:20px;
+	padding-top:10px;
+	}

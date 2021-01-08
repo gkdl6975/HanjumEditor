@@ -1,0 +1,122 @@
+@charset "UTF-8";
+    .layerForm { 
+         position: fixed; 
+         left: 0; 
+         top: 0; 
+         width: 100%; 
+         height: 100%; 
+         background-color: rgba(0, 0, 0, 0.5); 
+         opacity: 0; 
+         visibility: hidden; 
+         transform: scale(1.1); 
+         transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s; 
+         z-index:800;
+     } 
+     .layer-login-content { 
+         position: absolute; 
+         top: 50%; 
+         left: 50%; 
+         transform: translate(-50%, -50%); 
+         padding: 1rem 1.5rem; 
+         border-radius: 0.5rem; 
+         width : 90%;
+         max-height : 80%;
+     } 
+     .layer-join-content { 
+         position: absolute; 
+         top: 50%; 
+         left: 50%; 
+         transform: translate(-50%, -50%); 
+         padding: 1rem 1.5rem; 
+         border-radius: 0.5rem; 
+         width : 60%;
+         max-height : 80%;
+         overflow: scroll;
+     } 
+      @media (max-width: 768px) {
+	    .layer-join-content {
+	    		width: 90%; } }
+     .layer-join-content::-webkit-scrollbar {
+     	display: none;
+     }
+     .layer-content { 
+         position: absolute; 
+         top: 50%; 
+         left: 50%; 
+         transform: translate(-50%, -50%); 
+         background-color: white; 
+         padding: 1rem 1.5rem; 
+         width: 80%; 
+         height: 80%; 
+         border-radius: 0.5rem; 
+         overflow: scroll;
+     } 
+     .close { 
+         float: right; 
+         width: 1.5rem; 
+         line-height: 1.5rem; 
+         text-align: center; 
+         cursor: pointer; 
+         border-radius: 0.25rem; 
+         background-color: lightgray; 
+     } 
+     .close:hover { 
+         background-color: darkgray; 
+     } 
+     .show-layer { 
+         opacity: 1; 
+         visibility: visible; 
+         transform: scale(1.0); 
+         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s; 
+     } 
+     div.check_list { display: inline-block; margin: 0px 10px;}
+	 div.check_list input[type="checkbox"]+label {display: inline-block; cursor:pointer; width: 20px; height: 20px; vertical-align: middle; line-height: 10px;}
+	 div.check_list input[type="radio"]+label {display: inline-block; cursor:pointer; width: 20px; height: 20px; vertical-align: middle; line-height: 10px;}
+	
+	 div.write_form { min-width:800px; width:95%; margin: 20px auto 50px auto; background-color: #fff; border-radius: 16px; overflow: hidden;}
+	  @media (min-width: 425px) {
+	    .write_form {
+      			max-width: 380px; } }
+	  @media (min-width: 576px) {
+	    .write_form {
+      			max-width: 540px; } }
+	  @media (min-width: 768px) {
+	    .write_form {
+	    		max-width: 720px; } }
+	  @media (min-width: 992px) {
+	    .write_form {
+	      		max-width: 960px; } }
+	  @media (min-width: 1200px) {
+	    .write_form {
+	      		max-width: 1140px; } }
+	 div.write_title h1 { margin:0; padding: 20px; 
+	 					  font-weight: 700; 
+	 					  background: #4986fc;
+						  background: #ce4be8;
+						  background: -moz-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+						  background: -webkit-gradient(left top, right bottom, color-stop(0%, #ce4be8), color-stop(100%, #207ce5));
+						  background: -webkit-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+						  background: -o-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+						  background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+						  background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
+						  background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
+						  background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+						  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 );
+						  color:#fff; 
+						  }
+	 table.write_table { width:100%; margin: 20px auto; border-spacing: 0;}
+	 table.write_table td {min-height:30px; padding: 20px; border-bottom: #4986fc solid 1px;}
+	 table.write_table th {width:200px;font-weight: bold; color: #4986fc; font-size: 18px;}
+	 table.write_table td.td_content {font-weight: bold; font-size:18px; color:#000;}
+	
+	 div.input_subject input {width:70%; height: 30px;}
+	 div.input_link input{width:60%; height: 20px; margin-bottom: 10px;}
+	 div.input_price input{width:100px;}
+	 textarea {resize:none;}
+	 textarea#DetailContent {width: 80%; height: 400px;}
+	 div.write_form_submit {height: 50px; margin: 20px 0; text-align: center;}
+	 div.write_form_submit input {width: 200px; height: 50px; border-radius: 8px; background-color: #4986fc ; color: #fff; font-size: 20px; font-weight: bold; border: 0; transition: all 150ms ease-out; transform: translateY(0px);}
+	 div.write_form_submit input:hover {cursor:pointer;outline: 0;transform: translateY(-5px);transition: all 100ms ease-in;box-shadow: 0 5px 10px #a6a6a6;}
+	 div.input_salary input {width: 200px; height: 25px;}
+	 div.input_workTime input {width: 200px; height: 25px;}
+	 input#Location {width: 300px; height: 30px;}

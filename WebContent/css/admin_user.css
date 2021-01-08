@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+table{
+	font-weight: 400;
+}
+
+#paging_area{
+	width:200px;
+	height:100px;
+	float: left;
+	padding-top: 10px;
+}
+
+#search_menu_area{
+	width:400px;
+	height:100px;
+	float: right;
+	margin-right: 100px;
+	padding-top: 10px;
+}
+
+.btn{
+	border: 1px outset #364150;
+	background: #ffffff;
+	border-radius: 5px;
+	color: #000000;
+	padding:3px 5px;
+	cursor: pointer;
+}
+
+.manage_menu{
+	text-decoration:none;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.manage_menu:hover {
+	font-weight: normal;
+	cursor: pointer;
+}

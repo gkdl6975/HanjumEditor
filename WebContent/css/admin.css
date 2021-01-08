@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+nav#admin_sub_menu{width: 230px; height: 800px;float: left;
+font-size:1.0em ; background-color: #E60000A6; font-weight: bold; border-top: 0.7em solid; border-top-color: #fff2e6;}
+
+nav#admin_sub_menu ul{list-style: none;height: 800px;width: 230px; margin:50% 0px 0px 0px; }
+
+nav#admin_sub_menu li{width:230px; height:70px;border-bottom: 0.7px solid;border-bottom-color: #ffffff;}
+
+nav#admin_sub_menu a{text-decoration: none;color: #ffffff; text-align:center;
+display:block;height: 50px;width: 200px;padding: 25px;}
+
+div#category_main_form{width:800px; height: 800px;float:right;}
+input#category_menu{margin:100px 0px 0px 0px;}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+#registForm {
+		width: 800px;
+		height: 610px;
+		margin: auto;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+	
+	table {
+		margin: auto;
+		width: 800px;
+	}
+	
+	.td_left {
+		width: 100px;
+		background: #2B3643;
+		color: #e6e6e6;
+		text-align: center;
+	}
+	
+	.td_right {
+		width: 300px;
+	}
+	
+	#commandCell {
+		text-align: center;
+	}
+	
+	.btn{
+		border: 1px outset #364150;
+		background: #ffffff;
+		border-radius: 5px;
+		color: #313131
+	}
+	
+	#help_question{
+		width: 600px;
+		height: 50px;
+	}
+	
+	#help_answer{
+		width: 600px;
+		height: 400px;
+	}

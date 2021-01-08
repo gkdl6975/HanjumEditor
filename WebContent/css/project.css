@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.check_list { display: inline-block; padding:10px;}
+.check_list span { margin-left: 10px;}
+.label-primary { color: #4986fc !important; }
+.form-group-content {text-align: right;}
+.form-group:hover > .form-group-content{
+	font-weight: bold;
+}
+.board_ref {
+	max-width:560px;
+	max-height:315px;
+	width:90%;
+}
+.like_list_container {
+	width: 70%;
+	background:#fff;
+	overflow-x: hidden; 
+	overflow-y:auto; 
+	-ms-overflow-style: none; /* IE and Edge */
+   	scrollbar-width: none; 
+   	margin: 0 auto;
+   	max-height: 300px;
+}
+.like-group {
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	position: relative;
+	cursor: pointer;
+}
+.like_photo {
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.like_name {
+	position: absolute;
+	display: inline-block;
+	margin-left: 20px;
+	top:0px;
+}
+.like_btn {
+	position: absolute;
+	display: inline-block;
+	margin-left: 20px;
+	top:0px;
+	right:0px;
+	transition: all 0.5s;
+}
+.like-group:hover>.like_btn {
+	right:-5px;
+}
